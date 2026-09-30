@@ -1,0 +1,31 @@
+{
+  "cue_path": "disc/Dreams (Europe) (En,Fr,De,Es,It).cue",
+  "cue_name": "Dreams (Europe) (En,Fr,De,Es,It).cue",
+  "bin_name": "Dreams (Europe) (En,Fr,De,Es,It).bin",
+  "track_count": 1,
+  "data_track_size": 314024928,
+  "data_track_md5": "d6435a6081907ece055a566c13ccae33",
+  "data_track_sha1": "776191b9d719b9ad4158774978099f871bc55f0a",
+  "data_track_crc32": "e3b6a585",
+  "boot_exe": "SLES_007.14",
+  "serial": "SLES-00714",
+  "serial_exe": "SLES_007.14",
+  "volume_id": "",
+  "display_name": "Dreams",
+  "load_address": "0x80010000",
+  "entry_pc": "0x80024664",
+  "text_size": "0x0007D000",
+  "stack_base": "0x801FFFF0",
+  "require_cue": true,
+  "required_disc_fp": "9965d0b9e9e6160db0330440f437ea7ad26e5d7ae04fa81442b44746e8d6da0d",
+  "boot_exe_sha256": "f85be52ddfdb62d375bfc4e32ee9e49a826f0e99c46190cb390f2a4b4e397313",
+  "seed_count": 693,
+  "warnings": [
+    "cue has only 1 TRACK \u2014 Track-01-only dumps fail multi-track netplay/catalog gates; prefer a full Redump cue."
+  ],
+  "notes": [
+    "entry_pc/load_address/text_size/stack_base taken from PS-X EXE header.",
+    "seeds are first-pass boot-EXE JAL targets (+ entry); expect to grow as overlays / runtime paths are discovered.",
+    "required_disc_fp is psxrecomp-toc-v1 (matches runtime DiscIdentity)."
+  ]
+}

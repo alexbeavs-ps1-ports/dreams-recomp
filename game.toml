@@ -1,0 +1,55 @@
+
+[game]
+name = "Dreams"
+id = "SLES-00714"
+players = 1
+exe = "disc/SLES_007.14"
+disc = "disc/Dreams (Europe) (En,Fr,De,Es,It).cue"
+load_address = "0x80010000"
+entry_pc = "0x80024664"
+text_size = "0x0007D000"
+stack_base = "0x801FFFF0"
+
+[prepare_disc]
+out_dir = "disc"
+bin_name = "Dreams (Europe) (En,Fr,De,Es,It).bin"
+cue_name = "Dreams (Europe) (En,Fr,De,Es,It).cue"
+boot_exe = "SLES_007.14"
+known_sizes = [314024928]
+known_md5 = [
+  "d6435a6081907ece055a566c13ccae33",
+]
+known_sha1 = [
+  "776191b9d719b9ad4158774978099f871bc55f0a",
+]
+known_crc32 = [
+  "e3b6a585",
+]
+
+[recompiler]
+bios_config = "psxrecomp/bios/SCPH5552.toml"
+seeds = "seeds/ghidra_funcs.txt"
+out_dir = "generated"
+strict = true
+
+[runtime]
+openbios = false
+bios_hle = false
+window_title = "Dreams Recompiled"
+memcard_dir = "saves"
+overlay_cache = true
+
+[video]
+renderer = "opengl"
+aspect_ratio = "4:3"
+
+[controller]
+default_mode = "digital"
+
+[netplay]
+require_cue = true
+required_tracks = 1
+required_disc_fp = "9965d0b9e9e6160db0330440f437ea7ad26e5d7ae04fa81442b44746e8d6da0d"
+
+[pgo]
+enabled = false

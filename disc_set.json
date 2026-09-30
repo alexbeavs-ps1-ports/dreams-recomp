@@ -1,0 +1,18 @@
+{
+  "disc_count": 1,
+  "verdict": "single",
+  "differing_program_fields": [],
+  "warnings": [],
+  "discs": [
+    {
+      "index": 1,
+      "cue_name": "Dreams (Europe) (En,Fr,De,Es,It).cue",
+      "cue_path": "disc/Dreams (Europe) (En,Fr,De,Es,It).cue",
+      "serial": "SLES-00714",
+      "boot_exe": "SLES_007.14",
+      "entry_pc": "0x80024664",
+      "track_count": 1,
+      "required_disc_fp": "9965d0b9e9e6160db0330440f437ea7ad26e5d7ae04fa81442b44746e8d6da0d"
+    }
+  ]
+}
