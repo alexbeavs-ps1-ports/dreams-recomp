@@ -1,0 +1,48 @@
+{
+  "format_version": 1,
+  "game": {
+    "name": "Dreams",
+    "id": "SLES-00714",
+    "boot_exe": "SLES_007.14"
+  },
+  "marketing": {
+    "description": "",
+    "publisher": "",
+    "year": "",
+    "region": "Europe",
+    "players": 1
+  },
+  "rom_identity": {
+    "cue_name": "Dreams (Europe) (En,Fr,De,Es,It).cue",
+    "bin_name": "Dreams (Europe) (En,Fr,De,Es,It).bin",
+    "track_counts": [
+      1
+    ],
+    "require_cue": true,
+    "data_track": {
+      "size": 314024928,
+      "md5": "d6435a6081907ece055a566c13ccae33",
+      "sha1": "776191b9d719b9ad4158774978099f871bc55f0a",
+      "crc32": "e3b6a585"
+    },
+    "disc_fp": "9965d0b9e9e6160db0330440f437ea7ad26e5d7ae04fa81442b44746e8d6da0d"
+  },
+  "exe": {
+    "load_address": "0x80010000",
+    "entry_pc": "0x80024664",
+    "text_size": "0x0007D000",
+    "stack_base": "0x801FFFF0"
+  },
+  "seeds": {
+    "count": 693,
+    "source": "boot_exe_jal"
+  },
+  "warnings": [
+    "cue has only 1 TRACK \u2014 Track-01-only dumps fail multi-track netplay/catalog gates; prefer a full Redump cue."
+  ],
+  "notes": [
+    "entry_pc/load_address/text_size/stack_base taken from PS-X EXE header.",
+    "seeds are first-pass boot-EXE JAL targets (+ entry); expect to grow as overlays / runtime paths are discovered.",
+    "required_disc_fp is psxrecomp-toc-v1 (matches runtime DiscIdentity)."
+  ]
+}
